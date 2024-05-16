@@ -1,0 +1,45 @@
+class Client {
+private:
+    string nom;
+    string prenom;
+    string adresse;
+    string num;
+
+public:
+    Client() = default;
+    Client(string n, string p, string a, string N) : nom(n), prenom(p), adresse(a), num(N) {}
+
+    void afficherInformations() const {
+        cout << "Nom: " << nom << endl;
+        cout << "Prenom: " << prenom << endl;
+        cout << "Adresse: " << adresse << endl;
+        cout << "Numero de telephone: " << num << endl;
+    }
+
+    void modifierCoordonnees() {
+        cout << "Veuillez saisir votre nom: ";
+        cin >> nom;
+        cout << "Veuillez saisir votre prenom: ";
+        cin >> prenom;
+        cout << "Veuillez saisir votre adresse: ";
+        cin >> adresse;
+        cout << "Veuillez saisir votre numero: ";
+        cin >> num;
+    }
+
+    string getNom() const {
+        return nom;
+    }
+
+    string getPrenom() const {
+        return prenom;
+    }
+
+    string getAdresse() const {
+        return adresse;
+    }
+
+    string getNum() const {
+        return num;
+    }
+};
