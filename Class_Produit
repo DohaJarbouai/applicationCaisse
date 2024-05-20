@@ -1,0 +1,25 @@
+class Produit {
+private:
+    string nom;
+    double prix;
+    int quantite;
+
+public:
+    Produit(string n, double p, int q) : nom(n), prix(p), quantite(q) {}
+
+    string getNom() const {
+        return nom;
+    }
+
+    double getPrix() const {
+        return prix;
+    }
+
+    int getQuantite() const {
+        return quantite;
+    }
+
+    void setQuantite(int q) {
+        quantite = q;
+    }
+};
