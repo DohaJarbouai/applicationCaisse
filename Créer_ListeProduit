@@ -1,0 +1,22 @@
+vector<unique_ptr<Produit>> creerListeProduits() {
+    vector<unique_ptr<Produit>> liste;
+    int taille;
+    cout << "Veuillez saisir le nombre d'articles: ";
+    cin >> taille;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    for (int i = 0; i < taille; i++) {
+        string n;
+        double p;
+        int q;
+        cout << "Saisissez le nom de l'article " << i + 1 << ": ";
+        getline(cin, n);
+        cout << "Saisissez son prix: ";
+        cin >> p;
+        cout << "Saisissez la quantite en stock: ";
+        cin >> q;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        unique_ptr<Produit> produit(new Produit(n, p, q));
+        liste.push_back(move(produit));
+    }
+    return liste;
+}
