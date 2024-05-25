@@ -1,0 +1,8 @@
+void enregistrerAchat(const Client& client, const vector<unique_ptr<Produit>>& produits, double total) {
+    cout << "Enregistrement de l'achat pour le client " << client.getNom() << ":" << endl;
+    cout << "Produits achetes:" << endl;
+    for (const auto& produit : produits) {
+        cout << produit->getNom() << " - " << produit->getPrix() << " EUR" << endl;
+    }
+    cout << "Total paye: " << total << " EUR" << endl;
+}
