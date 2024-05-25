@@ -1,0 +1,7 @@
+void afficherListeProduits(const vector<unique_ptr<Produit>>& produits) {
+    cout << "Liste des produits:" << endl;
+    cout << setw(20) << left << "Nom" << setw(10) << "Prix" << setw(10) << "Quantite" << endl;
+    for (const auto& produit : produits) {
+        cout << setw(20) << left << produit->getNom() << setw(10) << produit->getPrix() << setw(10) << produit->getQuantite() << endl;
+    }
+}
