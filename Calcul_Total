@@ -1,0 +1,7 @@
+double calculerTotal(const vector<unique_ptr<Produit>>& produits) {
+    double total = 0;
+    for (const auto& produit : produits) {
+        total += produit->getPrix() * produit->getQuantite();
+    }
+    return total;
+}
