@@ -1,0 +1,8 @@
+#include "iostream"
+#include "Class_Client"
+#include "Class_Produit"
+#include "Créer_ListeProduit"
+#include "Afficher_ListeProduits"
+#include "Calcul_Total"
+#include "Appliquer_Promotion"
+#include "Enregistrer_Achat"
