@@ -1,4 +1,8 @@
-
+#include <iostream>
+#include <vector>
+#include <memory>
+#include <limits>
+#include <iomanip>
 #include "Class_Client"
 #include "Class_Produit"
 #include "Créer_ListeProduit"
